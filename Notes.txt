@@ -1,0 +1,2 @@
+01/html = we dont have to give the heigth to the main because it is a wrapper div , it contain all the website in it and has multiple pages
+02/js = timeline is used to make things asyncronuous and it will let the elements runs on a sequence basis.
