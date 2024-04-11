@@ -132,19 +132,56 @@ nav button svg{
     border: none;
     padding: 2px;
 }
+
 .slider-show{
-    background-color: red;
+    /* background-color: red; */
     margin-top: 8vw;
     position: absolute;
-    bottom: -3%;
-    width: 70%;
+    bottom: -9%;
+    white-space: nowrap;
+    padding: 1vw;
+    overflow: hidden;
+    width: 50%;
+    left: 25%;
 }
 .slider-show .slider{
     display: inline-block;
+    animation-name: sliderDrag;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 .slider-show .slider img{
-    height: 1vw;
+    height: 1.1vw;
     margin: 0 1vw;
+}
+
+@keyframes sliderDrag { /* making the animation here */
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.slider_wrapper-left{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right, #111,transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.slider_wrapper-right{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right,transparent,#111);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
 }
 
 
