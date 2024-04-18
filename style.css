@@ -288,7 +288,15 @@ nav button svg{
     border-bottom: none;
 }
 
-/* .page2_container-right-elem:nth-child(1){
+.page2_container-right-elem:nth-child(1){
     border-top: 1px solid #333;
     z-index: 1;
-} */
+}
+
+#page3{
+    height: 100vh;
+    width:100%;
+    background-color: #111;
+    position: relative;
+    background-image: url("blob:https://www.lazarev.agency/4581de51-6b6f-4844-b8df-8fd970386a6a");
+}

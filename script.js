@@ -37,5 +37,36 @@ nav.addEventListener("mouseleave", function(){
  });
 }
 
+function page2Animation(){
+    var rightContainer = document.querySelectorAll(".page2_container-right-elem");
+
+rightContainer.forEach(function(elem){
+    elem.addEventListener("mouseenter", function(){
+        gsap.to(elem.childNodes[3],{
+            opacity:1,
+            scale:1
+        })
+    })
+    elem.addEventListener("mouseleave", function(){
+        gsap.to(elem.childNodes[3],{
+            opacity:0,
+            scale:0
+        })
+        
+    })
+    elem.addEventListener("mousemove", function(dets){
+        gsap.to(elem.childNodes[3],{
+            x:dets.x - elem.getBoundingClientRect().x - 75,
+            y:dets.y - elem.getBoundingClientRect().y - 95,
+            borderBottom:"2px solid #fff"
+        })
+    })
+});
+}
+
+
+
+
 // navAnimation();
 
+// page2Animation();
