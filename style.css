@@ -304,25 +304,51 @@ nav button svg{
     align-items: center;
     justify-content: center;
 }   
-.page3_center .icon{
-   color: #000;
-   font-size: 2.8vw;
-    
+
+.page3-center{
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    flex-direction: column;
 }
-.page3_mid h5{
-    font: 2vw;
+.page3-center .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.page3-center .icon i{
+    color: #000;
+    font-size: 3vw;
+}
+.page3-center h5{
+    font-size: 0.9vw;
+    letter-spacing: -0.1vw;
+    font-weight: 700;
     background-color: #fff;
     color: #000;
     border-radius: 50px;
     padding: 12px 26px 10px 26px;
     margin-top: 0.5vw;
-    font-weight: 700;
+    text-transform: uppercase;
     opacity: 0;
     transition: all ease 0.5s;
-    transform: translateY(10%);
-    text-transform: uppercase;
+    transform: translateY(16%);
 }
-.page3_center:hover h5{
+.page3-center:hover h5{
     opacity: 1;
-    transform: translateY(10%);
+    transform: translateY(0%);
+}
+
+#page3 video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: scaleX(0.7) scaleY(0);
+    opacity: 0;
+    border-radius: 30px;
+    z-index: 9999;
 }
