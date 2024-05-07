@@ -88,9 +88,9 @@ video.addEventListener("click",function(){
 }
 
 
-// navAnimation();
+navAnimation();
 
-// page2Animation();
+page2Animation();
 
-// page3Animation();
+page3Animation();
 
