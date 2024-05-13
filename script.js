@@ -87,6 +87,22 @@ video.addEventListener("click",function(){
 })
 }
 
+function page6animation(){
+    var sections = document.querySelectorAll(".section-right");
+
+ sections.forEach(function(element) {
+    element.addEventListener("mousemove", function(){
+        element.childNodes[3].style.opacity = 1 ;
+        element.childNodes[3].play();
+    });
+
+    element.addEventListener("mouseleave", function(){
+        element.childNodes[3].style.opacity = 0 ;
+        element.childNodes[3].load();
+    })
+ });
+}
+
 
 navAnimation();
 
@@ -94,3 +110,7 @@ page2Animation();
 
 page3Animation();
 
+
+
+page6animation();
+ 
